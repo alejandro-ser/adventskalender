@@ -1,13 +1,10 @@
-// ===  Want each of 24 calendar doors to open only if number matches today's date or earlier:
+// ======  Want each of 24 calendar doors to open, on click, only if number matches today's date or earlier. To test other dates, set var todaysDate to a fixed number to pretend that's today's date. ====== //
 
 // var date = new Date();
 // var todaysDate = date.getDate();
+var todaysDate = 0;
 
-// === To test/view other dates, set var todaysDate to a fixed number to pretend that's today's date:
-
-var todaysDate = 24;
-
-// ===  Get the modal popup box + content + close span
+// =====  Get the modal popup box + content + close span ===== //
 
 var modal = document.getElementById('modalPopup');
 
@@ -20,7 +17,7 @@ var modalDailyPrice = document.querySelector('.dailyPrice');
 var modalDailyLink = document.querySelector('.dailyLink');
 var spanClose = document.querySelector('.close');
 
-// ===  Array of popup messages for each door
+// =====  Array of popup messages for each door  ===== //
 
 var moreInfo = [
                   { date: "1st December",
@@ -160,7 +157,7 @@ var moreInfo = [
                     location: "St Andrew's Church, Waterloo Street",
                     price: "£14.00",
                     linkUrl: "https://www.ticketsource.co.uk/whats-on/hove/st-andrews-church/hove-for-the-holidays-evergreen",
-                    linkText: "Visit TicketSource website"
+                    linkText: "Visit TicketSource"
                   },
 
                   { date: "15th December",
@@ -230,7 +227,7 @@ var moreInfo = [
                     location: "Parade kicks off from New Road, ending on Madeira Drive",
                     price: "Free/ Make a donation",
                     linkUrl: "https://www.crowdfunder.co.uk/burning-the-clocks-2018",
-                    linkText: "Visit Crowdfunder website"
+                    linkText: "Visit Crowdfunder"
                   },
 
                   { date: "22nd December",
@@ -265,7 +262,7 @@ var moreInfo = [
 
                ];
 
-// === no hover action if higher than today's date (add class 'no-hover') 
+// ==== no hover action if higher than today's date (add class 'no-hover') ===== //
 
 function noHover() {
 
@@ -278,7 +275,7 @@ function noHover() {
 
 }
 
-// === door-front: hover + click events 
+// ===== door-front: hover + click events ===== //
 
 var doorFronts = document.querySelectorAll(".front");
 
@@ -287,7 +284,7 @@ for (var i = 0; i < doorFronts.length; i++) {
   doorFronts[i].addEventListener("click", clickFront);
 }
 
-// === door-back: click event 
+// ===== door-back: click event ===== //
 
 var doorBacks = document.querySelectorAll(".back");
 
@@ -295,7 +292,7 @@ for (var i = 0; i < doorBacks.length; i++) {
   doorBacks[i].addEventListener("click", clickBack);
 }
 
-// === door-front: click toggles class 'open'
+// ==== door-front: click toggles class 'open' ===== //
 
 function clickFront() {
 
@@ -310,7 +307,7 @@ function clickFront() {
 
 };
 
-// === door-back: click opens the modal + displays corresponding content 
+// ===== door-back: click opens the modal + displays corresponding content ===== //
 
 function clickBack() {
 
@@ -339,13 +336,13 @@ function clickBack() {
 };
 
 
-// === click span (x) to close modal 
+// ===== click span (x) to close modal ===== //
 
 spanClose.onclick = function() {
   modal.style.display = "none";
 }
 
-// === click anywhere outside modal to close it
+// ===== clicks anywhere outside modal to close it ===== //
 
 window.onclick = function(event) {
   if (event.target == modal) {
