@@ -1,8 +1,8 @@
 // ======  Want each of 24 calendar doors to open, on click, only if number matches today's date or earlier. To test other dates, set var todaysDate to a fixed number to pretend that's today's date. ====== //
 
-// var date = new Date();
-// var todaysDate = date.getDate();
-var todaysDate = 0;
+var date = new Date();
+var todaysDate = date.getDate();
+// var todaysDate = 0;
 
 // =====  Get the modal popup box + content + close span ===== //
 
@@ -11,36 +11,40 @@ var modal = document.getElementById('modalPopup');
 var modalDailyDate = document.querySelector('.dailyDate');
 var modalDailyTitle = document.querySelector('.dailyTitle');
 var modalDailyContent = document.querySelector('.dailyContent');
+var modalDailyImage = document.querySelector('.image');
 var modalDailyTime = document.querySelector('.dailyTime');
 var modalDailyLocation = document.querySelector('.dailyLocation');
 var modalDailyPrice = document.querySelector('.dailyPrice');
-var modalDailyLink = document.querySelector('.dailyLink');
+var modalDailyLink = document.querySelector('#dailyLink');
+var modalDailyLinkTxt = document.querySelector('#dailyTxt');
 var spanClose = document.querySelector('.close');
 
 // =====  Array of popup messages for each door  ===== //
 
 var moreInfo = [
-                  { date: "1st December",
-                    title: "BEYOND Beach Hut Advent Calendar",
-                    content: "For this popular community arts event, a different Hove beach hut opens its doors each evening to display a Nativity-themed art installation, reminding people of the roots of Advent.",
-                    time: "1st to 24th December, 5.30 – 6.30pm.",
-                    location: "See website for map and details",
-                    price: "Free",
-                    linkUrl: "http://www.beyondchurch.co.uk/",
-                    linkText: "Visit website"
+                  { date: "1. Dezember",
+                    title: "Der Abschluss auf meiner Freundin",
+                    content: " ",
+                    img: "img/tag_1.jpg",
+                    time: " ",
+                    location: " ",
+                    price: " ",
+                    linkUrl: "https://open.spotify.com/track/5cNpLKPU2QX8uV33E1NUVr?si=8fwmAW1xQlywmnxrWGnRHA",
+                    linkTxt: "text/tag1.txt",
+                    linkText: "♪ Ein lied für dich ♪"
                   },
 
-                  { date: "2nd December",
+                  { date: "2. Dezember",
                     title: "Artists' Open Houses",
                     content: "Christmas Open Houses are back, with work from local artists, designers, and makers on sale in homes around the city. Pop along for mulled wine, mince pies and one-of-a-kind gifts.",
-                    time: "Weekends until 9th December",
+                    time: "Weekends until 9 Dezember",
                     location: "See website for map and details",
                     price: "Free entry (until you start shopping...)",
                     linkUrl: "https://aoh.org.uk/",
                     linkText: "Visit website"
                   },
 
-                  { date: "3rd December",
+                  { date: "3. Dezember",
                     title: "Brighton & Hove Schools Concert",
                     content: "A choir of over 1200 voices from the city's Primary, Junior and Special Schools will come together to sing seasonal and specially written songs. The choir is joined by Brighton & Hove Youth Wind Orchestra and Brighton & Hove Youth Big Band.",
                     time: "7.00pm – 8.30pm",
@@ -50,7 +54,7 @@ var moreInfo = [
                     linkText: "Visit website"
                   },
 
-                  { date: "4th December",
+                  { date: "4. Dezember",
                     title: "Brighton & Hove Albion vs Crystal Palace",
                     content: "Cheer on the Seagulls!",
                     time: "Kick off 7.45pm",
@@ -60,7 +64,7 @@ var moreInfo = [
                     linkText: "Visit website"
                   },
 
-                  { date: "5th December",
+                  { date: "5 Dezember",
                     title: "Lion & Lobster Christmas Market",
                     content: "A festive market to kick off the countdown to Christmas. Gifts, food, mulled wine, craft beer and artists all wrapped under one roof.",
                     time: "5.00pm - 11.00pm",
@@ -70,7 +74,7 @@ var moreInfo = [
                     linkText: "Visit website"
                   },
 
-                  { date: "6th December",
+                  { date: "6 Dezember",
                     title: "SPECTRUM",
                     content: "SPECTRUM is a Brighton Dome music project dedicated to nurturing and cultivating Brighton's vibrant music scene.<br>Winter special at Brighton Museum. Enjoy a range of unplugged performances in the exhibition rooms and listen to local acts in a way that you won't have experienced before.",
                     time: "8.00pm",
@@ -80,17 +84,17 @@ var moreInfo = [
                     linkText: "Visit website"
                   },
 
-                  { date: "7th December",
+                  { date: "7 Dezember",
                     title: "New England House Artists' Open Studios",
                     content: "35+ artists and makers open the doors to their studios in New England House for 3 days. Enjoy an alternative to high street Christmas shopping and buy unique gifts directly from the makers.",
-                    time: "Friday 7th December, 11.00am – 8.00pm<br>Saturday 8th December, 11.00am – 6.00pm<br>Sunday 9th December, 11.00am – 6.00pm",
+                    time: "Friday 7 Dezember, 11.00am – 8.00pm<br>Saturday 8 Dezember, 11.00am – 6.00pm<br>Sunday 9 Dezember, 11.00am – 6.00pm",
                     location: "New England House, New England Street",
                     price: "Free entry",
                     linkUrl: "http://nehopenstudios.org.uk/",
                     linkText: "Visit website"
                   },
 
-                  { date: "8th December",
+                  { date: "8 Dezember",
                     title: "Santa Dash",
                     content: "A crowd of Santas running in aid of Rockinghorse children's charity.",
                     time: "10.30am",
@@ -100,7 +104,7 @@ var moreInfo = [
                     linkText: "Visit website"
                   },
 
-                  { date: "9th December",
+                  { date: "9 Dezember",
                     title: "Christmas at the Royal Pavilion",
                     content: "Experience the Royal Pavilion transformed with festive decorations and glittering trees, and a replica of Queen Victoria's sleigh awaits you, where you can have Christmas photos!",
                     time: "Drop-in craft activities take place on 8th & 9th, 15th & 16th, 21st – 23rd December | 11.00am – 5.00pm (last admission 4.30pm)",
@@ -110,7 +114,7 @@ var moreInfo = [
                     linkText: "Visit website"
                   },
 
-                  { date: "10th December",
+                  { date: "10 Dezember",
                     title: "Blue Camel Club Christmas Party",
                     content: "THE club night for learning disabled people and their friends. If you like to party, dance to bands, watch films, hang out with friends and see performance, then the Blue Camel Club is for you! With live music and DJ sets.",
                     time: "7.00pm – 10.00pm",
@@ -120,7 +124,7 @@ var moreInfo = [
                     linkText: "Visit Carousel website"
                   },
 
-                  { date: "11th December",
+                  { date: "11 Dezember",
                     title: "Grimm Tales",
                     content: "Folk classics Little Red Riding Hood, Cinderella, Hansel and Gretel, Snow White, Rumpelstiltskin and others from the Brothers Grimm are presented in a fresh adaptation by acclaimed poet Carol Ann Duffy.<br>A beguiling and vigorous stage dramatization which takes a journey into the bright, warped world of a child's imagination. A feast of storytelling magic suitable for children and adults alike.",
                     time: "Tuesday 11th – Saturday 15th at 7.45pm, plus Saturday 15th at 2.30pm",
@@ -130,7 +134,7 @@ var moreInfo = [
                     linkText: "Visit website"
                   },
 
-                  { date: "12th December",
+                  { date: "12 Dezember",
                     title: "Christmas Ghost Stories",
                     content: "Never mind the tinsel and the presents, the turkey and the mistletoe. Take time out to celebrate the festive season the Victorian way — gathered together for spooky stories and tales of terror!",
                     time: "7.30pm – 9.30pm",
@@ -140,7 +144,7 @@ var moreInfo = [
                     linkText: "Visit Facebook event"
                   },
 
-                  { date: "13th December",
+                  { date: "13 Dezember",
                     title: "The Snowman exhibition",
                     content: "Nothing says Christmas like The Snowman! To celebrate the 40th anniversary of Raymond Briggs' much loved classic picture book, discover the magic in this exhibition of the original illustrations.",
                     time: "Until 6th January 2019",
@@ -150,7 +154,7 @@ var moreInfo = [
                     linkText: "Visit website"
                   },
 
-                  { date: "14th December",
+                  { date: "14 Dezember",
                     title: "Hove for the Holidays: Evergreen",
                     content: "Resound and Rebelles presents two evenings of fresh and festive music in the wonderful acoustic of St Andrew's Church. Experience rare winter songs from around the world, lush evergreen favourites and musical gems.",
                     time: "Friday 14th and Saturday 15th, 7.30 pm",
@@ -160,7 +164,7 @@ var moreInfo = [
                     linkText: "Visit TicketSource"
                   },
 
-                  { date: "15th December",
+                  { date: "15 Dezember",
                     title: "Festive events at Jubilee Library",
                     content: "Winter Wonderfest: Poet Kay Walton will be hosting this poetry event welcoming young poets from local primary schools to perform their own poetry.<br>Plus Hullabaloo Quire will be singing some beautifully wintery yuletide songs. Relax, switch off from the hustle and bustle and enjoy!",
                     time: "From 1.00pm",
@@ -170,7 +174,7 @@ var moreInfo = [
                     linkText: "Visit library's website"
                   },
 
-                  { date: "16th December",
+                  { date: "16 Dezember",
                     title: "Peter Pan",
                     content: "JM Barrie's classic Peter Pan comes to life this Christmas with a sprinkle of fairy dust and plenty of surprises. Peter and Tinkerbell invite you to the magical world of Neverland, a place where lost boys run riot, pirates are in fine voice, crocodiles go tick-tock, and the villain has a very shiny hook!<br>Suitable for all ages and is a perfect 'first-time' theatrical experience.",
                     time: "Until 31st December; see website for performance dates and times",
@@ -180,7 +184,7 @@ var moreInfo = [
                     linkText: "Visit website"
                   },
 
-                  { date: "17th December",
+                  { date: "17 Dezember",
                     title: "Royal Pavilion Ice Rink",
                     content: "Ice skating at the Royal Pavilion Ice Rink, open until 13th January 2019 — one of the most beautiful spots to go ice skating!",
                     time: "Open 10.00am – 10.15pm<br>(Tip: Go weekdays before 4.15pm, it’s cheaper!)",
@@ -190,7 +194,7 @@ var moreInfo = [
                     linkText: "Visit website"
                   },
 
-                  { date: "18th December",
+                  { date: "18 Dezember",
                     title: "Lion & Lobster Gay Men's Chorus",
                     content: "Partnering up with Gay Men's Chorus who will sing their hearts out, as part of the pub's festive events season.",
                     time: "8.00pm",
@@ -200,7 +204,7 @@ var moreInfo = [
                     linkText: "Visit website"
                   },
 
-                  { date: "19th December",
+                  { date: "19 Dezember",
                     title: "The Animals and Children Took to the Streets",
                     content: "Like a giant novel burst to life. Seamlessly synchronising live music, performance and storytelling with stunning films and animation, this is the wickedly twisted international hit tale from the multiple award-winning 1927, the company behind Golem and The Magic Flute. Highly recommended!",
                     time: "Until 12th January 2019; see website for performance dates and times",
@@ -210,7 +214,7 @@ var moreInfo = [
                     linkText: "Visit website"
                   },
 
-                  { date: "20th December",
+                  { date: "20 Dezember",
                     title: "Carols by Candlelight",
                     content: "A carol service for everyone, featuring NHS Community Choir Brighton and The Choir of St George's Church.<br>During the service there will be an opportunity to hang a star on the Christmas Tree in memory of a loved one.",
                     time: "From 5.45pm for drinks and mince pies, carol service starts 6.30pm",
@@ -250,10 +254,10 @@ var moreInfo = [
                     linkText: "Visit website"
                   },
 
-                  { date: "24th December | Christmas Eve!",
+                  { date: "24 Dezember | Christmas Eve!",
                     title: "Jack & The Beanstalk — Pantomime and Christmas Fayre",
                     content: "Christmas isn't Christmas without a panto! This new production of Jack & The Beanstalk promises a West End cast, lavish costumes, dazzling special effects... and Daisy the tap-dancing cow! Entrance to the Christmas Fayre is free for all panto ticket holders.<br><strong>Merry Christmas!</strong>",
-                    time: "Until 29th December; see website for performance dates and times",
+                    time: "Until 29 Dezember; see website for performance dates and times",
                     location: "Hilton Brighton Metropole",
                     price: "From £20.00",
                     linkUrl: "https://www.jackinbrighton.com/",
@@ -324,11 +328,13 @@ function clickBack() {
   modalDailyDate.innerHTML = moreInfo[calendarNumIndex].date;
   modalDailyTitle.innerHTML = moreInfo[calendarNumIndex].title;
   modalDailyContent.innerHTML = moreInfo[calendarNumIndex].content;
+  modalDailyImage.src = moreInfo[calendarNumIndex].img;
   modalDailyTime.innerHTML = moreInfo[calendarNumIndex].time;
   modalDailyLocation.innerHTML = moreInfo[calendarNumIndex].location;
   modalDailyPrice.innerHTML = moreInfo[calendarNumIndex].price;
   modalDailyLink.href = moreInfo[calendarNumIndex].linkUrl;
   modalDailyLink.innerHTML = moreInfo[calendarNumIndex].linkText;
+  modalDailyLinkTxt.href = moreInfo[calendarNumIndex].linkTxt;
 
   // can toggle door closed again IF want to: //
   // this.parentNode.classList.toggle("open");
