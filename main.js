@@ -35,13 +35,15 @@ var moreInfo = [
                   },
 
                   { date: "2. Dezember",
-                    title: "Artists' Open Houses",
-                    content: "Christmas Open Houses are back, with work from local artists, designers, and makers on sale in homes around the city. Pop along for mulled wine, mince pies and one-of-a-kind gifts.",
-                    time: "Weekends until 9 Dezember",
-                    location: "See website for map and details",
-                    price: "Free entry (until you start shopping...)",
-                    linkUrl: "https://aoh.org.uk/",
-                    linkText: "Visit website"
+                    title: "Neuer Anfang am Strand",
+                    content: " ",
+                    img: "img/tag_2.jpg",
+                    time: " ",
+                    location: " ",
+                    price: " ",
+                    linkUrl: "https://open.spotify.com/track/5iwz1NiezX7WWjnCgY5TH4?si=r6_37LVXRZeI8ytw9S9pgw",
+                    linkTxt: "text/tag2.txt",
+                    linkText: "♪ Ein lied für dich ♪"
                   },
 
                   { date: "3. Dezember",

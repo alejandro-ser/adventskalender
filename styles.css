@@ -121,7 +121,8 @@ body {
   grid-area: day2;
 }
 .day2 .back {
-   background: url(https://raw.githubusercontent.com/AnwenW/advent-calendar/master/images/calendar-pngs/2-openhouses.png);
+  background-size: cover !important;
+  background: url(img/tag_2.jpg);
  }
 .day3 {
   grid-area: day3;
