@@ -2,7 +2,7 @@
 
 var date = new Date();
 var todaysDate = date.getDate();
-// var todaysDate = 0;
+// var todaysDate = 30;
 
 // =====  Get the modal popup box + content + close span ===== //
 
@@ -47,13 +47,15 @@ var moreInfo = [
                   },
 
                   { date: "3. Dezember",
-                    title: "Brighton & Hove Schools Concert",
-                    content: "A choir of over 1200 voices from the city's Primary, Junior and Special Schools will come together to sing seasonal and specially written songs. The choir is joined by Brighton & Hove Youth Wind Orchestra and Brighton & Hove Youth Big Band.",
-                    time: "7.00pm – 8.30pm",
-                    location: "Brighton Centre",
-                    price: "£4.50 — £13.00",
-                    linkUrl: "https://brightoncentre.co.uk/whats-on/2018/brighton-hove-schools-concert/",
-                    linkText: "Visit website"
+                    title: "Hoch oben in den Wolken",
+                    content: " ",
+                    img: "img/tag_3.jpg",
+                    time: " ",
+                    location: " ",
+                    price: " ",
+                    linkUrl: "https://open.spotify.com/track/0q6LuUqGLUiCPP1cbdwFs3?si=lKwI0vnYTpaF_ESAT4Wk6g",
+                    linkTxt: "text/tag3.txt",
+                    linkText: "♪ Ein lied für dich ♪"
                   },
 
                   { date: "4. Dezember",
@@ -63,7 +65,7 @@ var moreInfo = [
                     location: "AMEX Stadium",
                     price: "Tickets from £30.00 (concessions available)",
                     linkUrl: "https://www.brightonandhovealbion.com/matches/fixtures/first-team/2018192/december/brighton-and-hove-albion-vs-crystal-palace-on-04-dec-18/",
-                    linkText: "Visit website"
+                    linkText: "♪ Ein lied für dich ♪"
                   },
 
                   { date: "5 Dezember",
@@ -73,7 +75,7 @@ var moreInfo = [
                     location: "Lion & Lobster, Sillwood Street",
                     price: "Free entry",
                     linkUrl: "https://www.thelionandlobster.co.uk/event/christmas-market-opening-party/",
-                    linkText: "Visit website"
+                    linkText: "♪ Ein lied für dich ♪"
                   },
 
                   { date: "6 Dezember",
@@ -83,7 +85,7 @@ var moreInfo = [
                     location: "Brighton Museum",
                     price: "£6.00 advance/ £8.00 on the door",
                     linkUrl: "https://brightondome.org/event/18868/spectrum/",
-                    linkText: "Visit website"
+                    linkText: "♪ Ein lied für dich ♪"
                   },
 
                   { date: "7 Dezember",
@@ -93,7 +95,7 @@ var moreInfo = [
                     location: "New England House, New England Street",
                     price: "Free entry",
                     linkUrl: "http://nehopenstudios.org.uk/",
-                    linkText: "Visit website"
+                    linkText: "♪ Ein lied für dich ♪"
                   },
 
                   { date: "8 Dezember",
@@ -103,7 +105,7 @@ var moreInfo = [
                     location: "Hove Lawns near the Peace Statue",
                     price: "Free/ Make a donation",
                     linkUrl: "http://www.santadashbrighton.co.uk/",
-                    linkText: "Visit website"
+                    linkText: "♪ Ein lied für dich ♪"
                   },
 
                   { date: "9 Dezember",
@@ -113,7 +115,7 @@ var moreInfo = [
                     location: "Royal Pavilion",
                     price: "Included in Royal Pavilion admission (half price for Brighton & Hove residents with proof of address)",
                     linkUrl: "https://brightonmuseums.org.uk/royalpavilion/whattosee/christmas-at-the-royal-pavilion/",
-                    linkText: "Visit website"
+                    linkText: "♪ Ein lied für dich ♪"
                   },
 
                   { date: "10 Dezember",
@@ -133,7 +135,7 @@ var moreInfo = [
                     location: "Brighton Little Theatre, Clarence Gardens",
                     price: "£10.00 adults/ £8.50 under 14s",
                     linkUrl: "https://www.brightonlittletheatre.com/grimmtales",
-                    linkText: "Visit website"
+                    linkText: "♪ Ein lied für dich ♪"
                   },
 
                   { date: "12 Dezember",
@@ -153,7 +155,7 @@ var moreInfo = [
                     location: "Brighton Museum",
                     price: "Free with Brighton Museum admission (free to Brighton & Hove residents with proof of address)",
                     linkUrl: "https://brightonmuseums.org.uk/brighton/exhibitions-displays/the-snowman/",
-                    linkText: "Visit website"
+                    linkText: "♪ Ein lied für dich ♪"
                   },
 
                   { date: "14 Dezember",
@@ -183,7 +185,7 @@ var moreInfo = [
                     location: "Attenborough Centre for the Creative Arts, University of Sussex, Falmer",
                     price: "From £15.00",
                     linkUrl: "https://www.attenboroughcentre.com/index.php?p=events/1991/peter-pan/",
-                    linkText: "Visit website"
+                    linkText: "♪ Ein lied für dich ♪"
                   },
 
                   { date: "17 Dezember",
@@ -193,7 +195,7 @@ var moreInfo = [
                     location: "Pavilion Gardens",
                     price: "From £10.00 (concessions available)",
                     linkUrl: "https://royalpavilionicerink.co.uk/",
-                    linkText: "Visit website"
+                    linkText: "♪ Ein lied für dich ♪"
                   },
 
                   { date: "18 Dezember",
@@ -203,7 +205,7 @@ var moreInfo = [
                     location: "Lion & Lobster, Sillwood Street",
                     price: "Free entry (just the drinks to pay for!)",
                     linkUrl: "https://www.visitbrighton.com/whats-on/the-lion-and-lobster-gay-mens-chorus-p1657971",
-                    linkText: "Visit website"
+                    linkText: "♪ Ein lied für dich ♪"
                   },
 
                   { date: "19 Dezember",
@@ -213,7 +215,7 @@ var moreInfo = [
                     location: "The Old Market",
                     price: "£18.00 – £29.50 (concessions available)",
                     linkUrl: "http://theoldmarket.com/shows/animals-children-took-streets/",
-                    linkText: "Visit website"
+                    linkText: "♪ Ein lied für dich ♪"
                   },
 
                   { date: "20 Dezember",
@@ -223,7 +225,7 @@ var moreInfo = [
                     location: "St George's Church, Kemp Town",
                     price: "Free/ Donation to Friends of Brighton & Hove Hospitals",
                     linkUrl: "https://www.brightonhospitalfriends.org.uk/support-us/fundraising/events/",
-                    linkText: "Visit website"
+                    linkText: "♪ Ein lied für dich ♪"
                   },
 
                   { date: "21st December",
@@ -243,7 +245,7 @@ var moreInfo = [
                     location: "Funky Fish Club, New Madeira Hotel, Marine Parade",
                     price: "Free entry",
                     linkUrl: "http://www.funkyfishclub.co.uk/",
-                    linkText: "Visit website"
+                    linkText: "♪ Ein lied für dich ♪"
                   },
 
                   { date: "23rd December",
@@ -253,7 +255,7 @@ var moreInfo = [
                     location: "Jubilee Square, Jubilee Street",
                     price: "Free entry",
                     linkUrl: "https://www.thorstipi.com/locations/winter/brighton",
-                    linkText: "Visit website"
+                    linkText: "♪ Ein lied für dich ♪"
                   },
 
                   { date: "24 Dezember | Christmas Eve!",
@@ -263,7 +265,7 @@ var moreInfo = [
                     location: "Hilton Brighton Metropole",
                     price: "From £20.00",
                     linkUrl: "https://www.jackinbrighton.com/",
-                    linkText: "Visit website"
+                    linkText: "♪ Ein lied für dich ♪"
                   },
 
                ];

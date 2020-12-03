@@ -128,7 +128,9 @@ body {
   grid-area: day3;
 }
 .day3 .back {
-  background: url(https://raw.githubusercontent.com/AnwenW/advent-calendar/master/images/calendar-pngs/3-choir.png);
+  background-size: cover !important;
+  background-position: left !important;
+  background: url(img/tag_3.jpg);
 }
 .day4 {
   grid-area: day4;
