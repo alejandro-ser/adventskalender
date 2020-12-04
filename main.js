@@ -59,12 +59,14 @@ var moreInfo = [
                   },
 
                   { date: "4. Dezember",
-                    title: "Brighton & Hove Albion vs Crystal Palace",
-                    content: "Cheer on the Seagulls!",
-                    time: "Kick off 7.45pm",
-                    location: "AMEX Stadium",
-                    price: "Tickets from £30.00 (concessions available)",
-                    linkUrl: "https://www.brightonandhovealbion.com/matches/fixtures/first-team/2018192/december/brighton-and-hove-albion-vs-crystal-palace-on-04-dec-18/",
+                    title: "'Si como lo mueve lo bate, me le tomo todo el chocolate'",
+                    content: " ",
+                    img: "img/tag_4.jpg",
+                    time: " ",
+                    location: " ",
+                    price: "",
+                    linkUrl: "https://open.spotify.com/track/6Y5k0NupErwLzOQXDxfVFa?si=SvWDcHF_SlKaSukKadaCwg",
+                    linkTxt: "text/tag4.txt",
                     linkText: "♪ Ein lied für dich ♪"
                   },
 

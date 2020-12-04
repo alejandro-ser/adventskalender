@@ -136,7 +136,9 @@ body {
   grid-area: day4;
 }
 .day4 .back {
-  background: url(https://raw.githubusercontent.com/AnwenW/advent-calendar/master/images/calendar-pngs/4-seagull.png);
+  background-size: cover !important;
+  background-position: center !important;
+  background: url(img/tag_4.jpg);
 }
 .day5 {
   grid-area: day5;
